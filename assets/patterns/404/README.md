@@ -37,11 +37,11 @@ In this situation, we can tell users that we are aware of the problem and are wo
 
 <div class="scale-wrapper">
 
-<div class="scale">{% include "404-broken-link.html" %}</div>
+<div class="scale">{% include "examples/404-broken-link.html" %}</div>
 
 </div>
 
-[View this page in a browser](404-pages/404-broken-link.html)
+[View this page in a browser](/examples/404-broken-link.html)
 
 If the result of a broken link is that a user can not complete the transaction and if the service they are using has an alternative channel that they can use. Users should be signposted to this channel to complete their transaction.
 
@@ -49,11 +49,11 @@ If the result of a broken link is that a user can not complete the transaction a
 
 <div class="scale-wrapper">
 
-<div class="scale">{% include "404-broken-link-alternative-route.html" %}</div>
+<div class="scale">{% include "examples/404-broken-link-alternative-route.html" %}</div>
 
 </div>
 
-[View this page in a browser](404-pages/404-broken-link-alternative-route.html)
+[View this page in a browser](examples/404-broken-link-alternative-route.html)
 
 ### Moved pages
 
@@ -76,21 +76,21 @@ We can help the user to:
 
 <div class="example">
   <div class="scale-wrapper">
-    <div class="scale">{% include "404-mistake.html" %}</div>
+    <div class="scale">{% include "examples/404-mistake.html" %}</div>
   </div>
 </div>
 
-[View this page in a browser](404-mistake.html)
+[View this page in a browser](examples/404-mistake.html)
 
 **Example: 404 page when the user has made a mistake, and there is an alternative channel that they can use**
 
 <div class="example">
   <div class="scale-wrapper">
-    <div class="scale">{% include "404-mistake-support.html" %}</div>
+    <div class="scale">{% include "examples/404-mistake-support.html" %}</div>
   </div>
 </div>
 
-[View this page in a browser](404-pages/404-mistake-support.html)
+[View this page in a browser](examples/404-mistake-support.html)
 
 In the situation where a single user continually makes the same error either through copying and pasting or typing the link incorrectly. We can intercept these repeated attempts and provide more detailed help such as providing an alternative channel if one is available. In this situation, we may want to withhold this option initially so that users can self-help through a digital channel rather than diverting them to less efficient channels.
 
@@ -99,11 +99,11 @@ In the situation where a single user continually makes the same error either thr
 
 <div class="example">
   <div class="scale-wrapper">
-    <div class="scale">{% include "404-intelligent.html" %}</div>
+    <div class="scale">{% include "examples/404-intelligent.html" %}</div>
   </div>
 </div>
 
-[View this page in a browser](404-pages/404-intelligent.html)
+[View this page in a browser](examples/404-intelligent.html)
 
 ## How it works 
 

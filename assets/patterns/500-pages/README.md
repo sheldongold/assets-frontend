@@ -1,0 +1,48 @@
+# 500 pages
+
+500 pages are used to tell users that we [HMRC] have a problem that was not their fault.
+
+They cover a range of situations when something has gone wrong with the server.
+
+500 errors should only be displayed to users for a short time. The standard approach within HMRC is to [shutter](http://hmrc-design-language-prototype.herokuapp.com/design-patterns/patterns/pages/shutter_pages/) a service, if there is going to be a disruption to users for an extended period of time.
+
+500 errors should be logged by services and fixed as a matter of priority.
+
+There are a number of [standard pages](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_error) that fall into the category of 500 pages. We do not need different error pages to cover all of these situations.
+
+## Why users see 500 pages
+
+For the purposes of HMRC services there are 3 scenarios when we would need to show users a 500 page:
+
+- 500 Internal Server Error
+- 503 Service Unavailable
+- 504 Gateway Timeout
+
+## 500 page design
+
+When displaying a 500 page we should:
+
+- use the <a href="">standard template</a>
+- explain to users whats going on
+- tell users what they can do, if anything to resolve the issue.
+- If there is an alternative channel that they can use to continue their transaction this should be made available to them.
+
+### Example 500 page
+
+<div class="scale-wrapper">
+
+<div class="scale">{% include "examples/500.html" %}</div>
+
+</div>
+
+[View in a browser](examples/500.html)
+
+### Example 500 page when there is an alternative channel
+
+<div class="scale-wrapper">
+
+<div class="scale">{% include "examples/500-alternative-channel.html" %}</div>
+
+</div>
+
+[View in a browser](examples/500-alternative-channel.html)

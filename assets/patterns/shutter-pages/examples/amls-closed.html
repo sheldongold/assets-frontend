@@ -1,0 +1,24 @@
+{% extends "govuk-template.html" %}
+
+{% block header %}
+{% import "patterns/macro/header.html" as index %}
+{{ index.header(proposition=true) }}
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">{% block h1 %}Service unavailable{% endblock %}</h1>
+
+      <p>You cannot use the online service to manage your anti-money laundering supervision.</p>
+
+    </div>
+
+  </div>
+</main>
+<!--HMRC footer-->
+{% endblock %}
+
+
